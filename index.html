@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/style.css" >
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Image Gallary</title>
 </head>
 
 <body>
@@ -16,8 +16,9 @@
     </header>
     <section>
         <p>Hover on any thumbnail to see it bigger</p>
-        <div id="thumb-bar" onload="createImage(gallary)"> </div>
-        <div class="form" onclick="unhide()">
+        <div id="thumb-bar"> </div>
+        <img class="displayed-img">
+        <div class="form">
             <label>What effect do you want to apply?</label>
             <input id="effect" type="text">
             <button>Submit</button>

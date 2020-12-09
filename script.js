@@ -1,5 +1,6 @@
 const form = document.querySelector(".form");
-var thumbBar = document.getElementById("thumb-bar");
+const thumbBar = document.getElementById("thumb-bar");
+var displayImg = document.querySelector(".displayed-img")
 const gallary = [
     { name: "Pic1", src: "images/pic1.jpg"},
     { name: "Pic2", src: "images/pic2.jpg"},
@@ -8,6 +9,8 @@ const gallary = [
     { name: "Pic5", src: "images/pic5.jpg"},
   ]
 
+window.addEventListener('load', createImage(gallary));
+
 function createImage(gallary) {
     for (image in gallary) {
         var img = document.createElement("img");
@@ -15,6 +18,16 @@ function createImage(gallary) {
         img.setAttribute("alt", `${gallary[image].name}`)
         thumbBar.appendChild(img)
     }
-}
+};
+
+thumbBar.addEventListener('mouseover', function(e) {
+    var displayedSrc = e.target.getAttribute("src");
+    displayImg.src = `${displayedSrc}`;;
+    form.style.display = "block";
+}, capture=true);
+
+
+
+
 
 
