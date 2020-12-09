@@ -10,3 +10,13 @@ body {
 div img {
     width: 20%;
 }
+
+.displayed_img {
+    width: 80vw;
+}
+
+@media only screen and (min-width: 640px) {
+    .displayed_img {
+        width: 640px;
+    }
+}

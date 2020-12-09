@@ -16,12 +16,14 @@
     </header>
     <section>
         <p>Hover on any thumbnail to see it bigger</p>
-        <div id="thumb-bar"> </div>
-        <img class="displayed-img" src="images/pic1.jpg" alt="Display Images" width="640" height="480">
-        <label>What effect do you want to apply?</label>
-        <input id="effect" type="text">
-        <button>Submit</button>
+        <div id="thumb-bar" onload="createImage(gallary)"> </div>
+        <div class="form" onclick="unhide()">
+            <label>What effect do you want to apply?</label>
+            <input id="effect" type="text">
+            <button>Submit</button>
+        </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
 
