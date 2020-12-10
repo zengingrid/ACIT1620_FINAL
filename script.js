@@ -39,6 +39,7 @@ function submit(gallary) {
         displayImg.src = effectImg.blur;
         input.value = null;
     } else {
+        input.value = null;
         alert("Effect Error: wrong effect has been entered.")
     }
 }
@@ -48,8 +49,3 @@ function isImage(image) {
     matchName = displayImg.name;
     return image.name == matchName;
 }
-
-
-
-
-
