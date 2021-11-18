@@ -32,7 +32,7 @@ thumbBar.addEventListener('mouseover', function(e) {
 }, capture=true);
 
 
-function submit(gallary) {
+$("button").click(function(gallary){
     effectEntered = input.value;
     if (effectEntered == "blur") {
         effectImg = gallary.find(isImage);
@@ -42,7 +42,7 @@ function submit(gallary) {
         input.value = null;
         alert("Effect Error: wrong effect has been entered.")
     }
-}
+});
 
 
 function isImage(image) {
