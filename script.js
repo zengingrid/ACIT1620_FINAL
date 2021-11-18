@@ -31,8 +31,7 @@ thumbBar.addEventListener('mouseover', function(e) {
     form.style.display = "block";
 }, capture=true);
 
-
-$("button").click(function(gallary){
+function submit(gallary){
     effectEntered = input.value;
     if (effectEntered == "blur") {
         effectImg = gallary.find(isImage);
@@ -42,8 +41,7 @@ $("button").click(function(gallary){
         input.value = null;
         alert("Effect Error: wrong effect has been entered.")
     }
-});
-
+};
 
 function isImage(image) {
     matchName = displayImg.name;
